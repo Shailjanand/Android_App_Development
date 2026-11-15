@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ivory_bg"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Top Header: 4 Circular Navigation Buttons (matching sketch) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageButton
+            android:id="@+id/btnNavHome"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/bg_circle_button"
+            android:contentDescription="Catalog"
+            android:padding="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_home"
+            app:tint="@color/olive_primary" />
+
+        <ImageButton
+            android:id="@+id/btnNavBorrowed"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/bg_circle_button"
+            android:contentDescription="Borrowed Books"
+            android:padding="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_borrowed"
+            app:tint="@color/olive_primary" />
+
+        <ImageButton
+            android:id="@+id/btnNavAbout"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/bg_circle_button"
+            android:contentDescription="About"
+            android:padding="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_about"
+            app:tint="@color/olive_primary" />
+
+        <ImageButton
+            android:id="@+id/btnNavExit"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/bg_circle_button"
+            android:contentDescription="Exit"
+            android:padding="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_exit"
+            app:tint="@color/red_borrowed" />
+
+    </LinearLayout>
+
+    <!-- Fragment Container (Middle Content Area with scrollable book cards) -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
