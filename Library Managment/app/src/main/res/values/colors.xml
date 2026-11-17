@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Soft Sky Blue & White Palette (Fresh · Minimal · Elegant) -->
+    <color name="olive_primary">#8DAFC4</color>      <!-- Primary -->
+    <color name="olive_primary_dark">#6D8E9E</color>
+    <color name="ivory_bg">#F2F7FA</color>          <!-- Background -->
+    <color name="cream_surface">#FFFFFF</color>       <!-- Surface -->
+    <color name="text_primary">#34495A</color>      <!-- Text -->
+    <color name="text_secondary">#5B7083</color>
+    <color name="tan_accent">#A8C9C1</color>          <!-- Accent -->
+
+    <!-- Status & Functional Colors -->
+    <color name="green_available">#8DAFC4</color>
+    <color name="red_borrowed">#D96B6B</color>
+    <color name="border_color">#D4E2EC</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

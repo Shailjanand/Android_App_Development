@@ -5,11 +5,19 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="testRunner" value="CHOOSE_PER_TEST" />
+<<<<<<< HEAD
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+=======
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Library Managment" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Library Managment" />
+            <option value="$PROJECT_DIR$/Library Managment/app" />
+>>>>>>> 73dbc3e794dd0035d9481a20c59bece692bd0f06
           </set>
         </option>
       </GradleProjectSettings>
