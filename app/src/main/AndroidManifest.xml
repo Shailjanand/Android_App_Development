@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestProject">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CalculatorActivity" />
+        <activity android:name=".CheckboxActivity" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".Second_activity" />
+        <activity android:name=".Login_page"/>
+        <activity android:name=".Select_color"/>
+        <activity android:name=".HelloActivity"/>
+        <activity android:name=".CallerActivity"/>
+        <activity android:name=".LocationActivity"/>
+        <activity android:name=".FileManagerActivity"/>
+        <activity android:name=".Constraint" />
+        <activity android:name=".GridLayout" />
+        <activity android:name=".FrameLayout" />
+        <activity android:name=".Relative" />
+        <activity android:name=".TestYourSkillActivity" />
+        <activity android:name=".SplashScreenActivity"/>
+        <activity android:name=".FragmentContainerActivity" />
+        <activity android:name=".SubjectsActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".AirplaneModeActivity" />
+        <activity android:name=".WifiStateActivity" />
+        <activity android:name=".BatteryActivity" />
+
+        <receiver
+            android:name=".BatteryReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+
+</manifest>
